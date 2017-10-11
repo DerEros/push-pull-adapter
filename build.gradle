@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.7.RELEASE'
+}
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+mainClassName = 'de.erna.PushPullAdapter'
+
+jar {
+    baseName = 'push-pull-adapter'
+    version = '0.1.0'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+}
+
+repositories {
+    mavenCentral()
+}
