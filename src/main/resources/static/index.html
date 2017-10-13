@@ -8,13 +8,14 @@
     <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/webjars/sockjs-client/sockjs.min.js"></script>
     <script type="text/javascript" src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script type="text/javascript" src="lib/jsonpath.js"></script>
     <script type="text/javascript" src="/app.js"></script>
 </head>
 <body>
-    <h2>Hello App</h2>
     <div class="row">
         <div class="col-md-12">
-            <div id="time"></div>
+            <div>Zeit seit letzter Messung: <span id="elapsedTime"></span></div>
+            <div>Verbrauch: <span id="consumedPower"></span></div>
         </div>
     </div>
 </body>
