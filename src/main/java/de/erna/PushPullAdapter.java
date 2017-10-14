@@ -17,7 +17,7 @@ public class PushPullAdapter {
 
     private AtomicReference<String> data = new AtomicReference<>("");
 
-    @GetMapping("/")
+    @GetMapping("/data")
     @ResponseBody
     public String getData() {
         return data.get();
